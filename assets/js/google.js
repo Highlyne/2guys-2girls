@@ -1,3 +1,13 @@
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAalnlowfk7atMaLgN3LGKDG9N-N6i9fxw",
+    authDomain: "shoot-the-curl.firebaseapp.com",
+    databaseURL: "https://shoot-the-curl.firebaseio.com",
+    projectId: "shoot-the-curl",
+    storageBucket: "shoot-the-curl.appspot.com",
+    messagingSenderId: "291488823524"
+  };
+  firebase.initializeApp(config);
 // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
 function test2() {
  // search + API Key
