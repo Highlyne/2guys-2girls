@@ -23,4 +23,12 @@
 
 >Our app will serve as a tropical trip planner- covering all of the bases you need to enjoy and/or plan your next beach trip. It will be as simple as entering a desirable location.
 
+### Technologies Utilized
+
+* Bootstrap
+* jQuery
+* JavaScript
+
+<hr>
+
 copyright© 2017-2018 [2girls]+[2guys]
