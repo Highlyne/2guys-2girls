@@ -17,4 +17,3 @@ function test2() {
 
 //Works-Able to pull back an object
 test2();
- console.log("This is a test")
