@@ -71,11 +71,11 @@
                   <th>Next Day:</th>
                 </tr>
                   <tr><th>Tempature:</th><td><div span id="todTemp"></div></td><td><div span id="tomTemp"></div></td><td><div span id="nexTemp"></div></td></tr>
-                  <tr><th>Sunrise:</th><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td></tr>
-                  <tr><th>Sunset:</th><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td></tr>
-                  <tr><th>Wave Height:</th><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td></tr>
-                  <tr><th>Low Tide:</th><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td></tr>
-                  <tr><th>Hight Tide:</th><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td><td><div span id="trainName"></div></td></tr>
+                  <tr><th>Sunrise:</th><td><div span id="todRise"></div></td><td><div span id="tomRise"></div></td><td><div span id="nexRise"></div></td></tr>
+                  <tr><th>Sunset:</th><td><div span id="todSet"></div></td><td><div span id="tomSet"></div></td><td><div span id="nexSet"></div></td></tr>
+                  <tr><th>Wave Height:</th><td><div span id="todWave"></div></td><td><div span id="tomWave"></div></td><td><div span id="nexWave"></div></td></tr>
+                  <tr><th>Low Tide:</th><td><div span id="todLowTide"></div></td><td><div span id="tomLowTide"></div></td><td><div span id="nexLowTide"></div></td></tr>
+                  <tr><th>High Tide:</th><td><div span id="todHighTide"></div></td><td><div span id="tomHighTide"></div></td><td><div span id="nexHighTide"></div></td></tr>
                 </tbody>
             </table>
               </div>
@@ -91,23 +91,39 @@
           </div>
 
         </div>
-
-
-        <div class="row">
-          <div class="places col-sm-12">
-
-            <h4>Google Places</h4>
-            <p>List of Bars and Restaurants</p>
-            
-          </div>
+        <div class="vids col-sm-6">
+          <h4>Surf Videos</h4>
+          <p>Webcams of Beaches here</p>
         </div>
       </div>
-
-
-      <footer class="footer">
-        <hr>
-        <p>&copy; 2017-2018 [2girls]+[2guys]</p>
-      </footer>
+      <div class="row">
+        <div class="places col-sm-12">
+          <h4>Google Places</h4>
+          <div class="panel text-center">
+            <div class="panel-heading"></div>
+            <table id= "table" class="table">
+              <tbody>
+              <tr>
+                <th></th>
+                <th>Restaurants:</th>
+              </tr>
+                <tr><th>Restaurant Name:</th><td><div span id="restName"></div></td><td><div span id="restName"></div></td><td><div span id="restName"></div></td></tr>
+                <tr><th>Rating:</th><td><div span id="restRating"></div></td><td><div span id="restRating"></div></td><td><div span id="restRating"></div></td></tr>
+                <tr><th>Hours of Operation:</th><td><div span id="restHours"></div></td><td><div span id="restHours"></div></td><td><div span id="restHours"></div></td></tr>
+                <tr><th>Price Level:</th><td><div span id="restPrice"></div></td><td><div span id="restPrice"></div></td><td><div span id="restPrice"></div></td></tr>
+              </tbody>
+          </table>
+            </div>
+          <!-- <h4>Google Places</h4>
+          <p>List of Bars and Restaurants</p> -->
+          
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <hr>
+      <p>&copy; 2017-2018 [2girls]+[2guys]</p>
+    </footer>
 
       <!-- /container -->
     </div>

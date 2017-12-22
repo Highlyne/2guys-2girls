@@ -10,10 +10,10 @@
   firebase.initializeApp(config);
 // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
 function places() {
- // search + API Key
- var api= "AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
+  // might have to change to an ID
+var location = $(".location").val();
 //  var location = "cocoa beach"; // CHANGE THIS TO INPUT VALUE
- var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=123+main+street&key=AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
+ var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + location + "&key=AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
 
 // AJAX
  $.ajax({
@@ -24,6 +24,19 @@ function places() {
      console.log(response);
  });
 }
+$("#placeResult").html("<p>" + response.results.name);
+$("#placeResult").append("<p>" + response.results.rating);
+$("#placeResult").append("<p>" + response.results.opening_hours.open_now);
+$("#placeResult").append("<p>" + response.results.price_level);
 
-//Works-Able to pull back an object
-();
+$(".btn btn-default search").on("click", function(event) {
+  // Preventing the button from trying to submit the form
+  event.preventDefault();
+  // Storing the location
+  var location = $("#placeResult").val().trim();
+
+  // Running the places function (passing in the location as an argument)
+  places(location);
+});
+
+
