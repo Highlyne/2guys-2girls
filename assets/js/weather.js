@@ -31,7 +31,6 @@ function getLoc() {
         var long = gResponse.results["0"].geometry.location.lng;
         weather(lat,long);
 
-
         // FUNCTION TO CALL WEATHER AJAX
         function weather(lat,long) {
             // search + API Key
