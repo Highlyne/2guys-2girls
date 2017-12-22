@@ -1,3 +1,15 @@
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAalnlowfk7atMaLgN3LGKDG9N-N6i9fxw",
+    authDomain: "shoot-the-curl.firebaseapp.com",
+    databaseURL: "https://shoot-the-curl.firebaseio.com",
+    projectId: "shoot-the-curl",
+    storageBucket: "shoot-the-curl.appspot.com",
+    messagingSenderId: "291488823524"
+  };
+  firebase.initializeApp(config);
+
+    // AJAX
 function getLoc() {
     var locationName = "orlando";     // ****CHANGE THIS TO INPUT VALUE*****
     var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + locationName + "&key=AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
