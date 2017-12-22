@@ -45,6 +45,8 @@ function getLoc() {
             }).done(function (response) {
                 console.log(queryURL);
                 console.log(response);
+                var todayTemp = response.data.weather["0"].hourly["0"].time;
+                $("#todTemp").text(todayTemp);
             })
         }
         weather();
