@@ -30,22 +30,25 @@ function getLoc() {
         console.log("Long:" + gResponse.results["0"].geometry.location.lng);
         var long = gResponse.results["0"].geometry.location.lng;
         weather(lat,long);
-    })
-}
-// FUNCTION TO CALL WEATHER AJAX
-function weather(lat, long) {
-    // search + API Key
-    var location = lat + "," + long;
-    var queryURL = "http://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
 
-    // WEATHER AJAX
-    $.ajax({
-        url: queryURL,
-        method: "GET",
-        //WEATHER PROMISE
-    }).done(function (response) {
-        console.log(queryURL);
-        console.log(response);
+        // FUNCTION TO CALL WEATHER AJAX
+        function weather(lat,long) {
+            // search + API Key
+            var location = lat + "," + long;
+            var queryURL = "http://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
+
+            // WEATHER AJAX
+            $.ajax({
+                url: queryURL,
+                method: "GET",
+                //WEATHER PROMISE
+            }).done(function (response) {
+                console.log(queryURL);
+                console.log(response);
+                var todayTemp = response.data.weather["0"].hourly["0"].time;
+                $("#todTemp").text(todayTemp);
+            })
+        }
     })
 }
 $(".search").on("click", function (event) {
