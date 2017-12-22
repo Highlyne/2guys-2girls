@@ -31,26 +31,71 @@ function getLoc() {
         var long = gResponse.results["0"].geometry.location.lng;
         weather(lat,long);
 
-        // FUNCTION TO CALL WEATHER AJAX
+ // FUNCTION TO CALL WEATHER AJAX
         function weather(lat,long) {
             // search + API Key
             var location = lat + "," + long;
             var queryURL = "http://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
-
-            // WEATHER AJAX
-            $.ajax({
-                url: queryURL,
-                method: "GET",
-                //WEATHER PROMISE
-            }).done(function (response) {
-                console.log(queryURL);
-                console.log(response);
-                var todayTemp = response.data.weather["0"].hourly["0"].time;
-                $("#todTemp").text(todayTemp);
-            })
-        }
     })
 }
+    // WEATHER AJAX
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+        //WEATHER PROMISE
+    }).done(function (response) {
+        console.log(queryURL);
+        console.log(response);
+
+        // Today Var's
+        var todayTemp = response.data.weather["0"].hourly["0"].tempF;
+        var todayRise = response.data.weather["0"].astronomy["0"].sunrise;
+        var todaySet = response.data.weather["0"].astronomy["0"].sunset;
+        var todayWave = response.data.weather["0"].hourly["0"].swellHeight_ft;
+        var todayLowTide = response.data.weather["0"].tides["0"].tide_data[1].tideTime;
+        var todayHighTide = response.data.weather["0"].tides["0"].tide_data[2].tideTime;
+
+        // Tomorrow var's
+        var tomTemp = response.data.weather["1"].hourly["0"].tempF;
+        var tomRise = response.data.weather["1"].astronomy["0"].sunrise;
+        var tomSet = response.data.weather["1"].astronomy["0"].sunset;
+        var tomWave = response.data.weather["1"].hourly["0"].swellHeight_ft;
+        var tomLowTide = response.data.weather["1"].tides["0"].tide_data[1].tideTime;
+        var tomHighTide = response.data.weather["1"].tides["0"].tide_data[2].tideTime;
+
+        // 3rd Day Var
+        var nextTemp = response.data.weather["2"].hourly["0"].tempF;
+        var nextRise = response.data.weather["2"].astronomy["0"].sunrise;
+        var nextSet = response.data.weather["2"].astronomy["0"].sunset;
+        var nextWave = response.data.weather["2"].hourly["0"].swellHeight_ft;
+        var nextLowTide = response.data.weather["2"].tides["0"].tide_data[1].tideTime;
+        var nextHighTide = response.data.weather["2"].tides["0"].tide_data[2].tideTime;
+        
+        // DOM Manipulation
+        //Today
+        $("#todTemp").text(todayTemp);
+        $("#todRise").text(todayRise);
+        $("#todSet").text(todaySet);
+        $("#todWave").text(todayWave);
+        $("#todLowTide").text(todayLowTide);
+        $("#todHighTide").text(todayHighTide);
+
+        // Tomorrow
+        $("#tomTemp").text(todayTemp);
+        $("#tomRise").text(todayRise);
+        $("#tomSet").text(todaySet);
+        $("#tomWave").text(todayWave);
+        $("#tomLowTide").text(todayLowTide);
+        $("#tomHighTide").text(todayHighTide);
+
+        // 3rd Day
+        $("#nextTemp").text(todayTemp);
+        $("#nextRise").text(todayRise);
+        $("#nextSet").text(todaySet);
+        $("#nextWave").text(todayWave);
+        $("#nextLowTide").text(todayLowTide);
+        $("#nextHighTide").text(todayHighTide);
+
 $(".search").on("click", function (event) {
     getLoc();
 })
