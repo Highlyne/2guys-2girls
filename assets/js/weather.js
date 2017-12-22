@@ -29,15 +29,16 @@ function getLoc() {
         //LONGITUDE
         console.log("Long:" + gResponse.results["0"].geometry.location.lng);
         var long = gResponse.results["0"].geometry.location.lng;
-        weather(lat,long);
-
- // FUNCTION TO CALL WEATHER AJAX
-        function weather(lat,long) {
-            // search + API Key
-            var location = lat + "," + long;
-            var queryURL = "http://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
-    })
+        weather(lat, long);
+    });
 }
+
+// FUNCTION TO CALL WEATHER AJAX
+function weather(lat, long) {
+    // search + API Key
+    var location = lat + "," + long;
+    var queryURL = "http://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
+
     // WEATHER AJAX
     $.ajax({
         url: queryURL,
@@ -70,7 +71,7 @@ function getLoc() {
         var nextWave = response.data.weather["2"].hourly["0"].swellHeight_ft;
         var nextLowTide = response.data.weather["2"].tides["0"].tide_data[1].tideTime;
         var nextHighTide = response.data.weather["2"].tides["0"].tide_data[2].tideTime;
-        
+
         // DOM Manipulation
         //Today
         $("#todTemp").text(todayTemp);
@@ -81,21 +82,22 @@ function getLoc() {
         $("#todHighTide").text(todayHighTide);
 
         // Tomorrow
-        $("#tomTemp").text(todayTemp);
-        $("#tomRise").text(todayRise);
-        $("#tomSet").text(todaySet);
-        $("#tomWave").text(todayWave);
-        $("#tomLowTide").text(todayLowTide);
-        $("#tomHighTide").text(todayHighTide);
+        $("#tomTemp").text(tomTemp);
+        $("#tomRise").text(tomRise);
+        $("#tomSet").text(tomSet);
+        $("#tomWave").text(tomWave);
+        $("#tomLowTide").text(tomLowTide);
+        $("#tomHighTide").text(tomHighTide);
 
         // 3rd Day
-        $("#nextTemp").text(todayTemp);
-        $("#nextRise").text(todayRise);
-        $("#nextSet").text(todaySet);
-        $("#nextWave").text(todayWave);
-        $("#nextLowTide").text(todayLowTide);
-        $("#nextHighTide").text(todayHighTide);
-
+        $("#nextTemp").text(nextTemp);
+        $("#nextRise").text(nextRise);
+        $("#nextSet").text(nextSet);
+        $("#nextWave").text(nextWave);
+        $("#nextLowTide").text(nextLowTide);
+        $("#nextHighTide").text(nextHighTide);
+    })
+}
 $(".search").on("click", function (event) {
     getLoc();
 })
