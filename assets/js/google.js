@@ -9,7 +9,7 @@
   };
   firebase.initializeApp(config);
 // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-function test2() {
+function places() {
  // search + API Key
  var api= "AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
 //  var location = "cocoa beach"; // CHANGE THIS TO INPUT VALUE
@@ -26,4 +26,4 @@ function test2() {
 }
 
 //Works-Able to pull back an object
-test2();
+();
