@@ -70,9 +70,31 @@ function weather(lat, long) {
         var nextWave = response.data.weather["2"].hourly["0"].swellHeight_ft;
         var nextLowTide = response.data.weather["2"].tides["0"].tide_data[1].tideTime;
         var nextHighTide = response.data.weather["2"].tides["0"].tide_data[2].tideTime;
+        
         // DOM Manipulation
+        //Today
         $("#todTemp").text(todayTemp);
+        $("#todRise").text(todayRise);
+        $("#todSet").text(todaySet);
+        $("#todWave").text(todayWave);
+        $("#todLowTide").text(todayLowTide);
+        $("#todHighTide").text(todayHighTide);
 
+        // Tomorrow
+        $("#tomTemp").text(todayTemp);
+        $("#tomRise").text(todayRise);
+        $("#tomSet").text(todaySet);
+        $("#tomWave").text(todayWave);
+        $("#tomLowTide").text(todayLowTide);
+        $("#tomHighTide").text(todayHighTide);
+
+        // 3rd Day
+        $("#nextTemp").text(todayTemp);
+        $("#nextRise").text(todayRise);
+        $("#nextSet").text(todaySet);
+        $("#nextWave").text(todayWave);
+        $("#nextLowTide").text(todayLowTide);
+        $("#nextHighTide").text(todayHighTide);
     })
 }
 $(".search").on("click", function (event) {
