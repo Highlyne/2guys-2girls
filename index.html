@@ -8,10 +8,9 @@
 
   <title>Shoot the Curl</title>
 
-  <!-- Links to CSS style sheets -->
+  <!-- Links to Reset.CSS at top to clear browser settings -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  
   <!-- BOOTSTRAP Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -30,7 +29,7 @@
   <!-- Link to FireBase -->
   <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 
-  <!-- Link style sheets -->
+  <!-- Link to custome style.CSS below Bootstrap to overide Bootstraps settings -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -46,12 +45,13 @@
           me. You won't regret it. Now three, act like wherever you are, that's the place to be. Isn't this great? Four,
           when ordering food, you find out what she wants, then order for the both of you. It's a classy move. Now, the lady
           will have the linguini and white clam sauce, and a Coke with no ice. And five, now this is the most important,
-          Rat. When it comes down to making out, whenever possible, put on side one of Led Zeppelin IV.</p>
+          Rat. When it comes down to making out, whenever possible, put on side one of Led Zeppelin IV.
+        </p>
         <p>
           <div class="input-group">
             <input type="text" class="form-control location" placeholder="Search for...">
             <span class="input-group-btn">
-              <button class="btn btn-default search" type="button">Go!</button>
+              <button class="btn btn-default search" type="button"><img src="assets/img/ic_search_black_18px.svg"></button>
         </p>
         </div>
         <br>
@@ -80,14 +80,13 @@
             </table>
               </div>
         Add Comment Collapse
-        
-        
-        
-        
+                             
           </div>
+
+          <!-- Surf Video div -->
           <div class="vids col-sm-6">
             <h4>Surf Videos</h4>
-            <p>Webcams of Beaches here</p>
+            <iframe width="420" height="236" src="https://www.youtube.com/embed/zMClH1apa20" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
           </div>
 
         </div>
@@ -117,7 +116,7 @@
 
     <footer class="footer">
       <hr>
-      <p>&copy; 2017-2018 [2girls]+[2guys]</p>
+      <p><img src="assets/img/ic_copyright_black_18px.svg"> 2017-2018 [2girls]+[2guys]</p>
     </footer>
 
       <!-- /container -->
@@ -126,7 +125,7 @@
     <!-- JAVASCRIPT - This must be last item in <body>. -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Set this to the path for your JavaScript file -->
+    <!-- Google API -->
     <script type="text/javascript" src="assets/js/google.js"></script>
 
     <!-- Weather API -->
