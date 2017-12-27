@@ -13,7 +13,7 @@
 
 ### Link to Live Site
 
-[Shoot the Curl Live Site](https://captnwalker.github.io/2guys-2girls/ "Shoot the Curl")
+[Shoot the Curl Live Site](https://highlyne.github.io/2guys-2girls/ "Shoot the Curl")
 
 ### Screenshot of this Project
 
