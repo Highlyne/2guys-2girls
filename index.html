@@ -47,7 +47,7 @@
           <span class="rainbow">Shoot the Curl</span>
         </div>
 
-        <p class="lead">Welcome to Shoot the Curl! The premeire app for planning your perfect day at the beach!</p>
+        <p class="lead">Welcome to Shoot the Curl! The premier app for planning your perfect day at the beach!</p>
         <p>
           <div class="input-group">
             <input type="text" class="form-control location" placeholder="Enter the name of a beach or a seaside town...">
@@ -55,8 +55,8 @@
               <button class="btn btn-default search" type="button" value="play" onclick="play()">
                 <img src="assets/img/ic_search_black_18px.svg">
               </button>
-        <!-- Link to .wav: Operates in conjunction with <value="play" onclick="play()"> button class tags above -->
-        <audio id="audio" src="assets/snd/gnarly.wav" ></audio> 
+              <!-- Link to .wav: Operates in conjunction with <value="play" onclick="play()"> button class tags above -->
+              <audio id="audio" src="assets/snd/gnarly.wav"></audio>
         </p>
         </div>
 
@@ -69,15 +69,20 @@
             <div class="panel text-center">
               <div class="panel-heading"></div>
               <table id="table" class="table">
+
+                <thead>
+
+                  <!-- <tr> -->
+                  <th></th>
+                  <th>Today</th>
+                  <th>Tomorrow</th>
+                  <th>Next Day</th>
+                  <!-- </tr> -->
+                </thead>
+
                 <tbody>
                   <tr>
-                    <th></th>
-                    <th>Today:</th>
-                    <th>Tomorrow:</th>
-                    <th>Next Day:</th>
-                  </tr>
-                  <tr>
-                    <th>Tempature:</th>
+                    <th>Temperature:</th>
                     <td>
                       <div span id="todTemp"></div>
                     </td>
@@ -159,76 +164,151 @@
             <iframe width="357" height="200" src="https://www.youtube.com/embed/zMClH1apa20" frameborder="0" gesture="media" allow="encrypted-media"
               allowfullscreen></iframe>
           </div>
-
         </div>
 
+        <!-- BEGIN Google Places -->
         <div class="row">
           <div class="places col-sm-12">
             <h4>Google Places</h4>
-            <div class="panel text-center">
+
+            <!-- <div class="panel text-center"> -->
+            <div class="panel">
+
               <div class="panel-heading"></div>
               <table id="table" class="table">
+
+                <thead>
+                  <tr>
+                    <th>Restaurant/Bar Name</th>
+                    <th>Rating</th>
+                    <th>Open Now</th>
+                    <th>Price Level</th>
+                  </tr>
+                </thead>
+
                 <tbody>
-                  <tr>
-                    
-                    <th>Local Restaurants & Bars:</th>
+
+                  <td>
+                    <div span id="restName"></div>
+                  </td>
+
+                  <td>
+                    <div span id="restRating"></div>
+                  </td>
+
+                  <td>
+                    <div span id="restHours"></div>
+                  </td>
+
+                  <td>
+                    <div span id="restPrice"></div>
+                  </td>
                   </tr>
+
                   <tr>
-                    <th>Restaurant Name:</th>
                     <td>
-                      <div span id="restName"></div>
+                      <div span id="restName1"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restRating1"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restHours1"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restPrice1"></div>
                     </td>
                   </tr>
+
                   <tr>
-                    <th>Rating:</th>
                     <td>
-                      <div span id="restRating"></div>
+                      <div span id="restName2"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restRating2"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restHours2"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restPrice2"></div>
                     </td>
                   </tr>
+
                   <tr>
-                    <th>Hours of Operation:</th>
                     <td>
-                      <div span id="restHours"></div>
+                      <div span id="restName3"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restRating3"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restHours3"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restPrice3"></div>
                     </td>
                   </tr>
+
                   <tr>
-                    <th>Price Level:</th>
                     <td>
-                      <div span id="restPrice"></div>
+                      <div span id="restName4"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restRating4"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restHours4"></div>
+                    </td>
+
+                    <td>
+                      <div span id="restPrice4"></div>
                     </td>
                   </tr>
+
                 </tbody>
               </table>
             </div>
-            <!-- <h4>Google Places</h4>
-            <p>List of Bars and Restaurants</p> -->
-
           </div>
-
-          <footer class="footer">
-            <hr>
-            <p>
-              <img src="assets/img/ic_copyright_white_18px.svg"> 2017-2018 [2girls]+[2guys]&nbsp;&nbsp;
-              <a href="https://github.com/Highlyne/2guys-2girls/">
-                <img src="assets/img/octocat.png" alt="Go to Github Repository" style="width:25px;height:25px;border:0;">
-              </a>
-            </p>
-          </footer>
-
-          <!-- /container -->
         </div>
+        <!-- closes the row div -->
+        <!-- END Google Places Section -->
 
-        <!-- JAVASCRIPT - This must be last item in <body>. -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <footer class="footer">
+          <hr>
+          <p>
+            <img src="assets/img/ic_copyright_white_18px.svg"> 2017-2018 [2girls]+[2guys]&nbsp;&nbsp;
+            <a href="https://github.com/Highlyne/2guys-2girls/">
+              <img src="assets/img/octocat.png" alt="Go to Github Repository" style="width:25px;height:25px;border:0;">
+            </a>
+          </p>
+        </footer>
 
-        <!-- Google API -->
-        <script type="text/javascript" src="assets/js/google.js"></script>
+        <!-- /container -->
+      </div>
 
-        <!-- Weather API -->
-        <script type="text/javascript" src="assets/js/weather.js"></script>
+      <!-- JAVASCRIPT - This must be last item in <body>. -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- Link to script.js -->
-        <script type="text/javascript" src="assets/js/script.js"></script>
+      <!-- Google API -->
+      <script type="text/javascript" src="assets/js/google.js"></script>
+
+      <!-- Weather API -->
+      <script type="text/javascript" src="assets/js/weather.js"></script>
+
+      <!-- Link to script.js -->
+      <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
 
