@@ -47,37 +47,37 @@
           <span class="rainbow">Shoot the Curl</span>
         </div>
 
-        <p class="lead">Welcome to Shoot the Curl! The premier app for planning your perfect day at the beach!</p>
+        <p class="lead">Welcome to Shoot the Curl! The premier app for planning your perfect day at the beach...</p>
         <p>
           <div class="input-group">
             <input type="text" class="form-control location" placeholder="Enter the name of a beach or a seaside town...">
             <span class="input-group-btn">
-              <button class="btn btn-default search" type="button" value="play" onclick="play()">
-                <img src="assets/img/ic_search_black_18px.svg">
+              <button class="btn btn-default search" type="submit" value="play" onclick="play()">
+                <img src="assets/img/ic_search_black_18px.svg" alt="Search">
               </button>
-              <!-- Link to .wav: Operates in conjunction with <value="play" onclick="play()"> button class tags above -->
-              <audio id="audio" src="assets/snd/gnarly.wav"></audio>
+            </span>
         </p>
+        <!-- Link to .wav: Operates in conjunction with <value="play" onclick="play()"> button class tags above -->
+        <audio id="audio" src="assets/snd/gnarly.wav"></audio>
+
         </div>
+        
 
         <br>
 
         <div class="row">
 
           <div class="weather col-sm-6">
-            <h4>3 Day Weather</h4>
+            <h4>3 Day Weather&nbsp;&nbsp;<img src="assets/img/ic_wb_sunny_white_18dp_1x.png"></h4>
             <div class="panel text-center">
               <div class="panel-heading"></div>
               <table id="table" class="table">
 
                 <thead>
-
-                  <!-- <tr> -->
                   <th></th>
                   <th>Today</th>
                   <th>Tomorrow</th>
                   <th>Next Day</th>
-                  <!-- </tr> -->
                 </thead>
 
                 <tbody>
@@ -169,7 +169,7 @@
         <!-- BEGIN Google Places -->
         <div class="row">
           <div class="places col-sm-12">
-            <h4>Google Places</h4>
+            <h4>Google Places&nbsp;&nbsp;<img src="assets/img/ic_restaurant_white_18dp_1x.png">&nbsp;&nbsp;<img src="assets/img/ic_local_bar_white_18dp_1x.png"></h4>
 
             <!-- <div class="panel text-center"> -->
             <div class="panel">
@@ -180,9 +180,9 @@
                 <thead>
                   <tr>
                     <th>Restaurant/Bar Name</th>
-                    <th>Rating</th>
+                    <th>Rating (1-5)</th>
                     <th>Open Now</th>
-                    <th>Price Level</th>
+                    <th>Price Level (1-5)</th>
                   </tr>
                 </thead>
 
@@ -290,7 +290,9 @@
           <p>
             <img src="assets/img/ic_copyright_white_18px.svg"> 2017-2018 [2girls]+[2guys]&nbsp;&nbsp;
             <a href="https://github.com/Highlyne/2guys-2girls/">
-              <img src="assets/img/octocat.png" alt="Go to Github Repository" style="width:25px;height:25px;border:0;">
+              <img src="assets/img/octocat.png" alt="Go to Github Repository" id="oCat">
+              
+              <!-- style="width:25px;height:25px;border:0;"> -->
             </a>
           </p>
         </footer>
