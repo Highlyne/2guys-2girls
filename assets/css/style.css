@@ -23,8 +23,16 @@ h4 {
     color: #ffffff;
 }
 
+th {
+    font-weight: bold;
+}
+
 .lead {
     color: #ffffff;
+}
+
+thead {
+    font-weight: bold;
 }
 
 .jumbotron {
@@ -68,15 +76,12 @@ h4 {
 @media screen and (max-width:640px) {
 }
 
-@media (max-width: 640px) {
-    #masthead {
-      position: static;
-    }
+@media (max-width: 768px) {
+  
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    float: none;
-    max-width: 100%;
+@media (max-width: 640px) {
+    .rainbow {
+        font-size: 2.5em;
     }
 }

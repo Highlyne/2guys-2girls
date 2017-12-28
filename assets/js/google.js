@@ -35,6 +35,63 @@ var location = $(".location").val();
      var pPrice = response.results["0"].price_level;
      $("#restPrice").text(pPrice);
      console.log(pPrice);
+
+    // BEGIN - THIS SECTION WAS ADDED //////////////////////////////////////////////////
+
+    var pName = response.results["1"].name;
+    $("#restName1").text(pName);
+    console.log(pName);
+    var pRate = response.results["1"].rating;
+    $("#restRating1").text(pRate);
+    console.log(pRate);
+    var pHour = response.results["1"].opening_hours.open_now;
+    $("#restHours1").text(pHour);
+    console.log(pHour);
+    var pPrice = response.results["1"].price_level;
+    $("#restPrice1").text(pPrice);
+    console.log(pPrice);
+
+    var pName = response.results["2"].name;
+    $("#restName2").text(pName);
+    console.log(pName);
+    var pRate = response.results["2"].rating;
+    $("#restRating2").text(pRate);
+    console.log(pRate);
+    var pHour = response.results["2"].opening_hours.open_now;
+    $("#restHours2").text(pHour);
+    console.log(pHour);
+    var pPrice = response.results["2"].price_level;
+    $("#restPrice2").text(pPrice);
+    console.log(pPrice);
+
+    var pName = response.results["3"].name;
+    $("#restName3").text(pName);
+    console.log(pName);
+    var pRate = response.results["3"].rating;
+    $("#restRating3").text(pRate);
+    console.log(pRate);
+    var pHour = response.results["3"].opening_hours.open_now;
+    $("#restHours3").text(pHour);
+    console.log(pHour);
+    var pPrice = response.results["3"].price_level;
+    $("#restPrice3").text(pPrice);
+    console.log(pPrice);
+
+    var pName = response.results["4"].name;
+    $("#restName4").text(pName);
+    console.log(pName);
+    var pRate = response.results["4"].rating;
+    $("#restRating4").text(pRate);
+    console.log(pRate);
+    var pHour = response.results["4"].opening_hours.open_now;
+    $("#restHours4").text(pHour);
+    console.log(pHour);
+    var pPrice = response.results["4"].price_level;
+    $("#restPrice4").text(pPrice);
+    console.log(pPrice);
+
+    // END END END - THIS SECTION WAS ADDED //////////////////////////////////////
+
  });
 }
 
