@@ -1,18 +1,16 @@
 .container {
-    background: url(../img/wave.jpg);
-    
+    background: url(../img/wave.jpg);    
 }
 
 .rainbow {
     font-size: 4em;
     font-family: 'Risque', cursive;    
-    /* font-family: 'Racing Sans One', cursive; */
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
     background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
     color:transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: -3px -3px 1px #000000;   
+    text-shadow: -3.3px -3.3px 1px #000000;   
 }
 
 p {
@@ -21,14 +19,26 @@ p {
 
 h4 {
     color: #ffffff;
+    text-shadow: 3.3px 3.3px 0px #000000;  
 }
 
 th {
     font-weight: bold;
+    text-shadow: 1px 1px .5px #ffffff; 
+}
+
+#restName, 
+#restName1, 
+#restName2, 
+#restName3, 
+#restName4 {
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px .5px rgb(143,194,140);
 }
 
 .lead {
     color: #ffffff;
+    text-shadow: 3.3px 3.3px 2px #000000;  
 }
 
 thead {
@@ -65,6 +75,18 @@ thead {
     color: #ffffff;    
 }
 
+
+#oCat {
+    height: 25px;
+    width: 25px;
+    border:0
+}
+
+
+ #oCat:hover {
+    transform: scale(5.25);
+} 
+
 /* Media Screen */
 
 @media screen and (max-width:980px) {  
@@ -76,8 +98,7 @@ thead {
 @media screen and (max-width:640px) {
 }
 
-@media (max-width: 768px) {
-  
+@media (max-width: 768px) {  
 }
 
 @media (max-width: 640px) {
