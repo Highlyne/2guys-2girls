@@ -52,11 +52,14 @@
           <div class="input-group">
             <input type="text" class="form-control location" placeholder="Enter the name of a beach or a seaside town...">
             <span class="input-group-btn">
-              <button class="btn btn-default search" type="button">
+              <button class="btn btn-default search" type="button" value="play" onclick="play()">
                 <img src="assets/img/ic_search_black_18px.svg">
               </button>
+        <!-- Link to .wav: Operates in conjunction with <value="play" onclick="play()"> button class tags above -->
+        <audio id="audio" src="assets/snd/gnarly.wav" ></audio> 
         </p>
         </div>
+
         <br>
 
         <div class="row">
@@ -223,6 +226,9 @@
 
         <!-- Weather API -->
         <script type="text/javascript" src="assets/js/weather.js"></script>
+
+        <!-- Link to script.js -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
 
