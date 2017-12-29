@@ -19,7 +19,13 @@ p {
 
 h4 {
     color: #ffffff;
-    text-shadow: 3.3px 3.3px 0px #000000;  
+    text-shadow: 1.3px 1.3px 0px #000000;  
+}
+
+h4:hover {
+    transition: 0.5s;
+    font-size: 1.5em; 
+    color: rgb(248, 244, 0);
 }
 
 th {
@@ -38,7 +44,7 @@ th {
 
 .lead {
     color: #ffffff;
-    text-shadow: 3.3px 3.3px 2px #000000;  
+    text-shadow: 3.3px 3.3px 1px #000000;  
 }
 
 thead {
@@ -82,10 +88,22 @@ thead {
     border:0
 }
 
-
  #oCat:hover {
-    transform: scale(5.25);
+    /* transform: scale(5.25); */
+    transition: 0.5s;
+    width: 150px;
+    height: 150px;
 } 
+
+#bug {
+    font-size: 0.9em;    
+}
+
+#bug:hover {
+    transition: 0.5s;
+    font-size: 1.5em; 
+    color: rgb(248, 244, 0);
+}
 
 /* Media Screen */
 
