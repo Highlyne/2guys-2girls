@@ -10,6 +10,8 @@
 // firebase.initializeApp(config);
 
 // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+
+
 function places() {
   // might have to change to an ID
   var location = $(".location").val();
@@ -21,6 +23,8 @@ function places() {
     url: queryURL,
     method: "GET"
   }).done(function (response) {
+
+    // First Response output to HTML
     console.log(queryURL);
     console.log(response);
     var pName = response.results["0"].name;
@@ -37,7 +41,7 @@ function places() {
     console.log(pPrice);
 
     // BEGIN - THIS SECTION WAS ADDED //////////////////////////////////////////////////
-
+    // Second Response output to HTML
     var pName = response.results["1"].name;
     $("#restName1").text(pName);
     console.log(pName);
@@ -51,6 +55,7 @@ function places() {
     $("#restPrice1").text(pPrice);
     console.log(pPrice);
 
+    // Third Response output to HTML
     var pName = response.results["2"].name;
     $("#restName2").text(pName);
     console.log(pName);
@@ -64,6 +69,7 @@ function places() {
     $("#restPrice2").text(pPrice);
     console.log(pPrice);
 
+    // Fourth Response output to HTML
     var pName = response.results["3"].name;
     $("#restName3").text(pName);
     console.log(pName);
@@ -77,6 +83,7 @@ function places() {
     $("#restPrice3").text(pPrice);
     console.log(pPrice);
 
+    // Fifth Response output to HTML
     var pName = response.results["4"].name;
     $("#restName4").text(pName);
     console.log(pName);

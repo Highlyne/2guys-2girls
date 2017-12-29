@@ -33,11 +33,12 @@
 * Google Fonts
 * JavaScript
 * Bootstrap
+* -webkit-
 * jQuery
 * HTML5
 * CSS
 
-<hr>
+---
 
 copyright© 2017-2018 [2girls]+[2guys]
 
