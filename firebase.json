@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "2guys-2girls",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
