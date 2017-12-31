@@ -17,9 +17,19 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+.input-group-btn {
+    overflow: hidden;
+}
+
 h4 {
     color: #ffffff;
     text-shadow: 1.3px 1.3px 0px #000000;  
+}
+
+.btn:hover {
+    /* on hover btn changes to The Red Over Yellow Flag
+Meaning: Recommended swimming area with lifeguard supervision */
+    background:linear-gradient(red 50%,yellow 50%, yellow);    
 }
 
 h4:hover {

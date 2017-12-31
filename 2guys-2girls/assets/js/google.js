@@ -108,7 +108,8 @@ function places() {
 // $("#restPrice").text(response.results.price_level);
 
 
-$(".search").on("click", function (event) {
+$(".search").on("click touchstart", function (event) {
+  //added touchstart to click for mobile btn responsiveness//
   // Preventing the button from trying to submit the form
   event.preventDefault();
   // Storing the location
