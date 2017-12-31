@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "2guys-2girls",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
