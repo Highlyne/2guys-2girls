@@ -22,6 +22,11 @@ h4 {
     text-shadow: 3.3px 3.3px 0px #000000;  
 }
 
+/* needed to fire btn on mobile devices ??? */
+/* .btn {
+    cursor: pointer;
+} */
+
 th {
     font-weight: bold;
     text-shadow: 1px 1px .5px #ffffff; 

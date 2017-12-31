@@ -98,6 +98,8 @@ function weather(lat, long) {
         $("#nextHighTide").text(nextHighTide);
     })
 }
-$(".search").on("click", function (event) {
+$(".search").on("click touchstart", function (event) {
     getLoc();
 })
+
+//add 'touchstart' in paranthesis after word "click" to run search btn on mobile devices
