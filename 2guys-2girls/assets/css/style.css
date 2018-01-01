@@ -28,6 +28,11 @@ h4:hover {
     color: rgb(248, 244, 0);
 }
 
+.btn:hover {
+    /*  on hover btn changes to The Red Over Yellow Flag Meaning: Recommended swimming area with lifeguard supervision */
+    background:linear-gradient(red 50%, yellow 50%, yellow);
+}
+
 th {
     font-weight: bold;
     text-shadow: 1px 1px .5px #ffffff; 
