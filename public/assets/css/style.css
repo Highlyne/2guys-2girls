@@ -1,7 +1,9 @@
+/* set background image for entire site */
 .container {
     background: url(../img/wave.jpg);    
 }
 
+/* CSS to create rainbow effect on Title text augmented with reverse drop-shadow */
 .rainbow {
     font-size: 4em;
     font-family: 'Risque', cursive;    
@@ -22,6 +24,7 @@ h4 {
     text-shadow: 1.3px 1.3px 0px #000000;  
 }
 
+/* hover effect on all h4 titles */
 h4:hover {
     transition: 0.5s;
     font-size: 1.5em; 
@@ -56,6 +59,7 @@ thead {
     font-weight: bold;
 }
 
+/* transparent jumbotron effect acheived with alpha channel */
 .jumbotron {
     width: 100%;   
     background: rgba(243, 204, 113, 0.26);    
@@ -93,6 +97,7 @@ thead {
     border:0
 }
 
+/* OctoCat transformation effect */
  #oCat:hover {
     /* transform: scale(5.25); */
     transition: 0.5s;
@@ -104,6 +109,7 @@ thead {
     font-size: 0.9em;    
 }
 
+/* Report a Bug transformation effect */
 #bug:hover {
     transition: 0.5s;
     font-size: 1.5em; 
@@ -124,6 +130,7 @@ thead {
 @media (max-width: 768px) {  
 }
 
+/* Adjust size of title on smaller screens to preserve rainbow effect */
 @media (max-width: 640px) {
     .rainbow {
         font-size: 2.5em;

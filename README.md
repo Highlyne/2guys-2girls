@@ -13,7 +13,9 @@
 
 ### Link to Live Site
 
-[Shoot the Curl Live on Firebase](https://shootthecurl-d25cc.firebaseapp.com// "Shoot the Curl")
+[Shoot the Curl Live on Firebase](https://shootthecurl-d25cc.firebaseapp.com/ "Shoot the Curl")
+
+[Shoot the Curl Live on Github](https://highlyne.github.io/2guys-2girls/public/index.html "Shoot the Curl")
 
 ### Screenshot of this Project
 
