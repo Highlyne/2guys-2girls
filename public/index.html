@@ -49,8 +49,10 @@
 
         <p class="lead">Welcome to Shoot the Curl! The premier app for planning your perfect day at the beach...</p>
         <p>
+          <!-- User input field and placeholder test -->
           <div class="input-group">
             <input type="text" class="form-control location" placeholder="Enter the name of a beach or seaside town...">
+            <!-- Modified button with custom Material icon and onClick play .wav event -->
             <span class="input-group-btn">
               <button class="btn btn-info search" type="submit" value="play" onclick="play()">
                 <img src="assets/img/ic_search_black_18px.svg" alt="Search">
@@ -68,6 +70,7 @@
 
           <div class="weather col-sm-6">
             <h4>3 Day Weather&nbsp;&nbsp;
+              <!-- custom Material icon -->
               <img src="assets/img/ic_wb_sunny_white_18dp_1x.png">
             </h4>
             <div class="panel text-center">
@@ -161,26 +164,29 @@
           <!-- End Weather -->
 
           <!-- Surf Video div -->
-          <div class="vids col-sm-6">      
+          <div class="vids col-sm-6">
 
-              <h4>Surf Videos&nbsp;&nbsp;<img src="assets/img/ic_pool_white_18dp_1x.png"></h4>
-              
-              <iframe width="357" height="200" src="https://www.youtube.com/embed/zMClH1apa20" frameborder="0" gesture="media" allow="encrypted-media"
-                allowfullscreen></iframe>
+            <h4>Surf Videos&nbsp;&nbsp;
+              <!-- custom Material icon -->
+              <img src="assets/img/ic_pool_white_18dp_1x.png">
+            </h4>
+            <!-- Static YouTube video to be replaced with Live BEach WebCams in future version -->
+            <iframe width="357" height="200" src="https://www.youtube.com/embed/zMClH1apa20" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
 
-            </div>
-            <!-- closes weather/vid row -->          
+          </div>
+          <!-- closes weather/vid row -->
         </div>
 
         <!-- BEGIN Google Places -->
         <div class="row">
           <div class="places col-sm-12">
             <h4>Google Places&nbsp;&nbsp;
+              <!-- 2 custom Material icons -->
               <img src="assets/img/ic_restaurant_white_18dp_1x.png">&nbsp;&nbsp;
               <img src="assets/img/ic_local_bar_white_18dp_1x.png">
             </h4>
 
-            <!-- <div class="panel text-center"> -->
             <div class="panel">
 
               <div class="panel-heading"></div>
@@ -297,20 +303,29 @@
         <footer class="footer">
           <hr>
           <p>
+            <!-- custom Material icon -->
             <img src="assets/img/ic_copyright_white_18px.svg"> 2017-2018 [2girls]+[2guys]&nbsp;&nbsp;
+            <!-- Link to Github repo -->
             <a href="https://github.com/Highlyne/2guys-2girls/">
               <img src="assets/img/octocat.png" alt="Go to Github Repository" id="oCat">
             </a>
           </p>
-          <p id="bug"><img src="assets/img/ic_bug_report_white_24dp_1x.png">&nbsp;&nbsp;Found a Bug?
-            <a href="mailto:captnwalker@gmail.com?Subject=Hello,%20I%20may%20have%20found%20a%20bug%20in%20your%20Shoot%20the%20Curl%20app.&body=Please describe the bug in as much detail as possible." target="_top"><strong>Report it here.</strong></a></p>
+          <p id="bug">
+            <!-- custom Material icon -->
+            <img src="assets/img/ic_bug_report_white_24dp_1x.png">&nbsp;&nbsp;Found a Bug?
+            <!-- MailTo Link for bug reporting -->
+            <a href="mailto:captnwalker@gmail.com?Subject=Hello,%20I%20may%20have%20found%20a%20bug%20in%20your%20Shoot%20the%20Curl%20app.&body=Please describe the bug in as much detail as possible."
+              target="_top">
+              <strong>Report it here.</strong>
+            </a>
+          </p>
         </footer>
 
         <!-- /container -->
       </div>
 
       <!-- JAVASCRIPT - This must be last item in <body>. -->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>      
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
       <!-- Weather API -->
       <script type="text/javascript" src="assets/js/weather.js"></script>
