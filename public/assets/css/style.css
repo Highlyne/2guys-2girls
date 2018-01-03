@@ -135,4 +135,7 @@ thead {
     .rainbow {
         font-size: 2.5em;
     }
+    #video {
+        width: 100%;
+    }
 }
