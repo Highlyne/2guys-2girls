@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 // AJAX
 function getLoc() {
     var locationName = $(".location").val();     // ****CHANGE THIS TO INPUT VALUE*****
-    var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + locationName + "&maxprice=2&rankby=prominence&type=bar&key=AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
+    var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + locationName + "&key=AIzaSyAHyYRJfWWzGaz8Ifc7v3_9dqUUrKR2Xz0";
     // GOOGLE AJAX
     $.ajax({
         url: queryURL,
