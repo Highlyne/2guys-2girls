@@ -83,7 +83,7 @@ function weather(lat, long) {
         $("#todWave").text(todayWave);
         $("#todLowTide").text(todayLowTide);
         $("#todHighTide").text(todayHighTide);
-        // $("#todIcon").(todayIcon);
+        $("#todIcon").attr("src", todayIcon);
 
         // Tomorrow
         $("#tomTemp").text(tomTemp);
@@ -92,7 +92,7 @@ function weather(lat, long) {
         $("#tomWave").text(tomWave);
         $("#tomLowTide").text(tomLowTide);
         $("#tomHighTide").text(tomHighTide);
-        // $("#tomIcon").(tomIcon);
+        $("#tomIcon").attr("src", tomIcon);
 
         // 3rd Day
         $("#nextTemp").text(nextTemp);
@@ -101,7 +101,7 @@ function weather(lat, long) {
         $("#nextWave").text(nextWave);
         $("#nextLowTide").text(nextLowTide);
         $("#nextHighTide").text(nextHighTide);
-        // $("#nextIcon").(nextIcon);
+        $("#nextIcon").attr("src", nextIcon);
     })
 }
 $(".search").on("click touchstart", function (event) {
