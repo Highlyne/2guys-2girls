@@ -37,7 +37,7 @@ function getLoc() {
 function weather(lat, long) {
     // search + API Key
     var location = lat + "," + long;
-    var queryURL = "http://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
+    var queryURL = "https://api.worldweatheronline.com/premium/v1/marine.ashx?key=913a2d1646d941cea87153512172112&q=" + location + "&tp=24&tide=yes&format=json";
 
     // WEATHER AJAX
     $.ajax({
@@ -55,6 +55,7 @@ function weather(lat, long) {
         var todayWave = response.data.weather["0"].hourly["0"].swellHeight_ft;
         var todayLowTide = response.data.weather["0"].tides["0"].tide_data[1].tideTime;
         var todayHighTide = response.data.weather["0"].tides["0"].tide_data[2].tideTime;
+        var todayIcon = response.data.weather["0"].hourly["0"].weatherIconUrl["0"].value;
 
         // Tomorrow var's
         var tomTemp = response.data.weather["1"].hourly["0"].tempF;
@@ -63,6 +64,7 @@ function weather(lat, long) {
         var tomWave = response.data.weather["1"].hourly["0"].swellHeight_ft;
         var tomLowTide = response.data.weather["1"].tides["0"].tide_data[1].tideTime;
         var tomHighTide = response.data.weather["1"].tides["0"].tide_data[2].tideTime;
+        var tomIcon = response.data.weather[1].hourly["0"].weatherIconUrl["0"].value;
 
         // 3rd Day Var
         var nextTemp = response.data.weather["2"].hourly["0"].tempF;
@@ -71,6 +73,7 @@ function weather(lat, long) {
         var nextWave = response.data.weather["2"].hourly["0"].swellHeight_ft;
         var nextLowTide = response.data.weather["2"].tides["0"].tide_data[1].tideTime;
         var nextHighTide = response.data.weather["2"].tides["0"].tide_data[2].tideTime;
+        var nextIcon = response.data.weather[2].hourly["0"].weatherIconUrl["0"].value;
 
         // DOM Manipulation
         //Today
@@ -80,6 +83,7 @@ function weather(lat, long) {
         $("#todWave").text(todayWave);
         $("#todLowTide").text(todayLowTide);
         $("#todHighTide").text(todayHighTide);
+        $("#todIcon").(todayIcon);
 
         // Tomorrow
         $("#tomTemp").text(tomTemp);
@@ -88,6 +92,7 @@ function weather(lat, long) {
         $("#tomWave").text(tomWave);
         $("#tomLowTide").text(tomLowTide);
         $("#tomHighTide").text(tomHighTide);
+        $("#tomIcon").(tomIcon);
 
         // 3rd Day
         $("#nextTemp").text(nextTemp);
@@ -96,6 +101,7 @@ function weather(lat, long) {
         $("#nextWave").text(nextWave);
         $("#nextLowTide").text(nextLowTide);
         $("#nextHighTide").text(nextHighTide);
+        $("#nextIcon").(nextIcon);
     })
 }
 $(".search").on("click touchstart", function (event) {
