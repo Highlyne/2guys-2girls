@@ -19,7 +19,10 @@ function places() {
     $("#restRating").text(pRate);
     console.log(pRate);
     var pHour = response.results["0"].opening_hours.open_now;
-    $("#restHours").text(pHour);
+      if (pHour === true) {
+      $("#restHours").html("Open")}
+      else if (pHour === false) { 
+      $("#restHours").html("Closed")};
     console.log(pHour);
     var pPrice = response.results["0"].price_level;
     $("#restPrice").text(pPrice);
@@ -33,7 +36,10 @@ function places() {
     $("#restRating1").text(pRate);
     console.log(pRate);
     var pHour = response.results["1"].opening_hours.open_now;
-    $("#restHours1").text(pHour);
+    if (pHour === true) {
+      $("#restHours1").html("Open")}
+      else if (pHour === false) { 
+      $("#restHours1").html("Closed")};
     console.log(pHour);
     var pPrice = response.results["1"].price_level;
     $("#restPrice1").text(pPrice);
@@ -47,7 +53,10 @@ function places() {
     $("#restRating2").text(pRate);
     console.log(pRate);
     var pHour = response.results["2"].opening_hours.open_now;
-    $("#restHours2").text(pHour);
+    if (pHour === true) {
+      $("#restHours2").html("Open")}
+      else if (pHour === false) { 
+      $("#restHours2").html("Closed")};
     console.log(pHour);
     var pPrice = response.results["2"].price_level;
     $("#restPrice2").text(pPrice);
@@ -61,7 +70,10 @@ function places() {
     $("#restRating3").text(pRate);
     console.log(pRate);
     var pHour = response.results["3"].opening_hours.open_now;
-    $("#restHours3").text(pHour);
+    if (pHour === true) {
+      $("#restHours3").html("Open")}
+      else if (pHour === false) { 
+      $("#restHours3").html("Closed")};
     console.log(pHour);
     var pPrice = response.results["3"].price_level;
     $("#restPrice3").text(pPrice);
@@ -75,7 +87,10 @@ function places() {
     $("#restRating4").text(pRate);
     console.log(pRate);
     var pHour = response.results["4"].opening_hours.open_now;
-    $("#restHours4").text(pHour);
+    if (pHour === true) {
+      $("#restHours4").html("Open")}
+      else if (pHour === false) { 
+      $("#restHours4").html("Closed")};
     console.log(pHour);
     var pPrice = response.results["4"].price_level;
     $("#restPrice4").text(pPrice);
